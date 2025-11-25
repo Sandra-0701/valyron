@@ -18,7 +18,7 @@ import Script from 'next/script';
 import Marq from '@/components/home-main/Marq';
 
 export const metadata = {
-  title: 'webfolio',
+  title: 'Valyron',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',

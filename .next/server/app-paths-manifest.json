@@ -1,9 +1,5 @@
 {
-  "/not-found": "app/not-found.js",
-  "/home-personal/page": "app/home-personal/page.js",
-  "/valyron-homepage/page": "app/valyron-homepage/page.js",
-  "/home-digital-agency/page": "app/home-digital-agency/page.js",
-  "/page-contact/page": "app/page-contact/page.js",
-  "/home-modern-studio/page": "app/home-modern-studio/page.js",
-  "/portfolio-gallery/page": "app/portfolio-gallery/page.js"
+  "/page": "app/page.js",
+  "/home-main/page": "app/home-main/page.js",
+  "/valyron-homepage/page": "app/valyron-homepage/page.js"
 }

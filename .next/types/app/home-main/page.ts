@@ -1,4 +1,4 @@
-// File: D:\Valyron\app\home-main\page.js
+// File: D:\valyron\app\home-main\page.js
 import * as entry from '../../../../app/home-main/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
