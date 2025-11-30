@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
   "/not-found": "app/not-found.js",
   "/valyron-homepage/page": "app/valyron-homepage/page.js",
   "/page-404/page": "app/page-404/page.js"
+=======
+  "/page": "app/page.js",
+  "/home-main/page": "app/home-main/page.js",
+  "/valyron-homepage/page": "app/valyron-homepage/page.js"
+>>>>>>> 348e1f7dcc8d7a297bd782304731baac6ac1dd57
 }
