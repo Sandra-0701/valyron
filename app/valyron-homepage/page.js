@@ -3,22 +3,18 @@ import Lines from '@/components/common/Lines';
 import ProgressScroll from '@/components/common/ProgressScroll';
 import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
-import Clients from '@/components/home-main/Clients';
-import Feat from '@/components/home-main/Feat';
-import Footer from '@/components/common/Footer';
-import Header from '@/components/home-main/Header';
-import Intro from '@/components/home-main/Intro';
-import Marq2 from '@/components/common/Marq2';
-import MainNavbar from '@/components/common/MainNavbar';
-import Portfolio from '@/components/home-main/Portfolio';
-import Services from '@/components/home-main/Services';
-import Team from '@/components/home-main/Team';
-import Testimonials from '@/components/home-main/Testimonials';
 import Script from 'next/script';
-import Marq from '@/components/home-main/Marq';
+import Header from '@/components/valyron-homepage/Header';
+import Marq from '@/components/valyron-homepage/Marq';
+import Service from '@/components/valyron-homepage/Service';
+import Navbar from '@/components/valyron-common/Navbar';
+import About from '@/components/valyron-homepage/About';
+import Contact from '@/components/valyron-homepage/Contact';
+import Team from '@/components/valyron-homepage/Team';
+import Footer from '@/components/valyron-common/Footer';
 
 export const metadata = {
-  title: 'webfolio',
+  title: 'Valyron',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',
@@ -38,20 +34,16 @@ export default function Home() {
       <Cursor />
       <ProgressScroll />
       <Lines />
-      <MainNavbar />
+      <Navbar />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main className="main-bg o-hidden">
-            <Header />
-            <Intro />
-            <Marq />
-            <Services />
-            <Portfolio />
-            <Feat />
+            <Header/>
+            <About/>
+            <Marq/>
+            <Service/>
             <Team />
-            <Testimonials />
-            <Clients />
-            <Marq2 />
+            <Contact/>
           </main>
           <Footer />
         </div>
