@@ -1,13 +1,10 @@
-"use client"; // This directive is essential for using hooks like useState and event handlers
-
+"use client"; 
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser'; // Import EmailJS
+import emailjs from '@emailjs/browser'; 
 
-// --- Replace these with your actual EmailJS credentials ---
 const SERVICE_ID = 'service_ak79w9e';
 const TEMPLATE_ID = 'template_tgeub2w';
 const PUBLIC_KEY = 'jQSlGMzLjn_jgKW5_';
-// ------------------------------------ // This is often called PUBLIC_KEY in the EmailJS docs
 
 function Contact() {
   const [status, setStatus] = useState("");
@@ -20,7 +17,7 @@ function Contact() {
       .then((result) => {
           console.log(result.text);
           setStatus("Message sent successfully!");
-          e.target.reset(); // Optional: Clear the form after successful submission
+          e.target.reset();
       }, (error) => {
           console.log(error.text);
           setStatus("Failed to send message. Please try again.");
