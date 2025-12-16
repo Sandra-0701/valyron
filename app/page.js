@@ -3,15 +3,15 @@ import Lines from '@/components/common/Lines';
 import ProgressScroll from '@/components/common/ProgressScroll';
 import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
-import Demos from '@/components/landing/Demos';
-import Footer from '@/components/landing/Footer';
-import Header from '@/components/landing/Header';
-import Marq from '@/components/landing/Marq';
-import Navbar from '@/components/landing/Navbar';
-import Pages from '@/components/landing/Pages';
-import Show from '@/components/landing/Show';
-import Testimonials from '@/components/landing/Testimonials';
 import Script from 'next/script';
+import Header from '@/components/valyron-homepage/Header';
+import Marq from '@/components/valyron-homepage/Marq';
+import Service from '@/components/valyron-homepage/Service';
+import Navbar from '@/components/valyron-common/Navbar';
+import About from '@/components/valyron-homepage/About';
+import Contact from '@/components/valyron-homepage/Contact';
+import Team from '@/components/valyron-homepage/Team';
+import Footer from '@/components/valyron-common/Footer';
 
 export const metadata = {
   title: 'Valyron',
@@ -20,7 +20,6 @@ export const metadata = {
     shortcut: '/assets/imgs/favicon.ico',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
-      '/landing-preview/css/preview-style.css',
       '/assets/css/style.css',
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
@@ -38,17 +37,18 @@ export default function Home() {
       <Navbar />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <main>
-            <Header />
-            <Demos />
-            <Pages />
-            <Show />
-            <Marq />
-            <Testimonials />
+          <main className="main-bg o-hidden">
+            <Header/>
+            <About/>
+            <Marq/>
+            <Service/>
+            <Team />
+            <Contact/>
           </main>
           <Footer />
         </div>
       </div>
+
       <Script
         src="/assets/js/ScrollTrigger.min.js"
         strategy="beforeInteractive"
@@ -57,6 +57,7 @@ export default function Home() {
         src="/assets/js/ScrollSmoother.min.js"
         strategy="beforeInteractive"
       />
+
       <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
       <Script
         strategy="beforeInteractive"
@@ -70,6 +71,7 @@ export default function Home() {
         strategy="beforeInteractive"
         src="/assets/js/countdown.js"
       ></Script>
+
       <Script
         strategy="beforeInteractive"
         src="/assets/js/gsap.min.js"
@@ -86,7 +88,9 @@ export default function Home() {
         strategy="beforeInteractive"
         src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
       ></Script>
-      {/* {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}{' '}
+
+      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
+
       <Script src="/assets/js/scripts.js"></Script>
     </body>
   );

@@ -1,38 +1,16 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-<<<<<<< HEAD
-=======
-    ],
-    "/home-main/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/home-main/page.js"
->>>>>>> 348e1f7dcc8d7a297bd782304731baac6ac1dd57
-    ],
-    "/valyron-homepage/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/valyron-homepage/page.js"
-    ],
-<<<<<<< HEAD
-    "/page-404/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page-404/page.js"
-    ],
-=======
->>>>>>> 348e1f7dcc8d7a297bd782304731baac6ac1dd57
     "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
